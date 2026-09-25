@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <title>Conversor de Tabelas para XLSX</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div>
+        <p class="eyebrow">CONVERSOR LOCAL</p>
+        <h1>Conversor de Tabelas para XLSX</h1>
+        <p class="subtitle">XLS, XLSX, XML, CSV, TXT e TSV → Excel moderno.</p>
+      </div>
+      <span class="privacy">🔒 Arquivos processados no navegador</span>
+    </header>
+
+    <section id="dropzone" class="dropzone" tabindex="0">
+      <div class="drop-icon">⇩</div>
+      <h2>Arraste os arquivos aqui</h2>
+      <p>ou clique para selecionar</p>
+      <p class="formats">.xls · .xlsx · .xml · .csv · .txt · .tsv</p>
+      <input id="fileInput" type="file" multiple
+        accept=".xls,.xlsx,.xml,.csv,.txt,.tsv" hidden>
+    </section>
+
+    <section class="toolbar">
+      <div>
+        <strong id="counter">Nenhum arquivo selecionado</strong>
+        <p id="status">Os arquivos não são enviados para um servidor.</p>
+      </div>
+      <div class="actions">
+        <button id="clearBtn" class="secondary" disabled>Limpar</button>
+        <button id="convertBtn" disabled>Converter todos</button>
+      </div>
+    </section>
+
+    <section id="fileList" class="file-list" aria-live="polite"></section>
+
+    <footer>
+      <p>Conversor de Tabelas · processamento local no navegador</p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

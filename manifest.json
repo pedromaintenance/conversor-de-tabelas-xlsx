@@ -1,0 +1,9 @@
+{
+  "name": "Conversor de Tabelas para XLSX",
+  "short_name": "Conversor XLSX",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3f4f6",
+  "theme_color": "#111827",
+  "description": "Conversor local de XLS, XLSX, XML, CSV, TXT e TSV para XLSX."
+}
