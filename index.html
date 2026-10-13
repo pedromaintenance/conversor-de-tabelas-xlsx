@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#111827">
   <title>Conversor de Tabelas para XLSX</title>
   <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 </head>
@@ -48,5 +49,10 @@
   </main>
 
   <script src="app.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => navigator.serviceWorker.register("./service-worker.js", { scope: "./" }).catch(console.error));
+    }
+  </script>
 </body>
 </html>
