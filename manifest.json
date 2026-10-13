@@ -5,5 +5,15 @@
   "display": "standalone",
   "background_color": "#f3f4f6",
   "theme_color": "#111827",
-  "description": "Conversor local de XLS, XLSX, XML, CSV, TXT e TSV para XLSX."
+  "description": "Conversor local de XLS, XLSX, XML, CSV, TXT e TSV para XLSX.",
+  "id": "/conversor-de-tabelas-xlsx/",
+  "scope": "./",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
 }
